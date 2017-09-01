@@ -1,0 +1,24 @@
+{
+  "name": "instawall",
+  "version": "1.0.0",
+  "description": "Scrapes an Instagram user's account for images which are then animated in a browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/workingmatt/instawall.git"
+  },
+  "keywords": [
+    "instagram",
+    "scrape",
+    "animation"
+  ],
+  "author": "Matt Mapleston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/workingmatt/instawall/issues"
+  },
+  "homepage": "https://github.com/workingmatt/instawall"
+}
