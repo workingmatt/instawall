@@ -6,5 +6,6 @@ Scrapes an Instagram user's photos and videos. Animates the images for display i
 Usage
 -----
 ```
+$ nodemon run
+```
 $ node index.js <username>
-

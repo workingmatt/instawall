@@ -4,7 +4,8 @@
   "description": "Scrapes an Instagram user's account for images which are then animated in a browser",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "run": "nodemon index.js turnercontemporary"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/workingmatt/instawall/issues"
   },
-  "homepage": "https://github.com/workingmatt/instawall"
+  "homepage": "https://github.com/workingmatt/instawall",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
 }
