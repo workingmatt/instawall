@@ -13,7 +13,7 @@ module.exports = {
 				return err;
 			}
 			console.log('Sending file list');
-			res.send(files);
+			res.send(files[10]);
 			return;
 		})
 	}
