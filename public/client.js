@@ -2,9 +2,7 @@
 console.log("hi from client.js");
 
 //Initial function fired once page loaded
-//Could use $(document).ready(function() {})
 $(function () {
-
 	$.ajax({
 		type: 'POST',
 		url: 'http://localhost:3000/files',
@@ -15,14 +13,34 @@ $(function () {
 			for (i of data) {
 				var img = new Image();
 				img.src = "./turnercontemporary/"+i;
-				//img.width = 100//$(window).width();
-				img.alt = "matt's alt text";
-				$('<div class="grid-item" data-i="'+(j+1)+'">')
+				img.width = $(window).width()/5;
+				//img.height= $(window).height()/4;
+				img.alt = i;
+				$('<div id="grid-item" data-i="'+(j+1)+'">')
 				.append(img)
-				.appendTo('#thegrid');
+				.appendTo('#thegrid')
+				.imagesLoaded(function () {
+					updateGrid();
+				})
 				j=j+1
 			}
+		},
+		stop: function() {
+			console.log("image done");
 		}
+	});
+})
+
+function updateGrid() {
+	$('#thegrid').masonry('layout');
+}
+
+$(window).on("load", function() {
+	console.log("Loaded");
+	$('#thegrid').masonry({
+		itemSelector: '#grid-item',
+		columnWidth: 50,
+		gutter: 100
 	});
 })
 

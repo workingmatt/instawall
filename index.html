@@ -1,17 +1,30 @@
 <html>
 <head>
 <style>
-	.thegrid {background: red;}
+	#thegrid {
+		background: red;
+		width: auto;
+		margin: 0;}
+	#grid-sizer,
+	#grid-item {
+		width: 20%;
+		margin: 0px;
+		float: left;
+	}
+	#grid-item--width2 {
+		width: 40%;
+	}
 </style>
 </head>
 
 <body>
-Hello World1
 <div id="thegrid">
-<p>In thegrid</p>
+<div id="grid-sizer"></div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./imagesloaded.pkgd.min.js"></script>
+<script src="./masonry.pkgd.min.js"></script>
 <script src="./client.js"></script>
 </body>
 
