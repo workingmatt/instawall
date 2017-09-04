@@ -4,7 +4,7 @@ var fs = require('fs');
 module.exports = {
 
 	sendFileList: function(res){
-		var path = "./turnercontemporary";
+		var path = "./public/turnercontemporary";
 		fs.readdir(path,'utf8',function(err,files){
 			if(err){
 				console.log("getFileList error: ");
@@ -13,7 +13,7 @@ module.exports = {
 				return err;
 			}
 			console.log('Sending file list');
-			res.send(files[10]);
+			res.send(files);
 			return;
 		})
 	}

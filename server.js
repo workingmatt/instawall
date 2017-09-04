@@ -12,14 +12,18 @@ app.use(bodyParser.urlencoded({
 	extended: true
 }));
 app.use((req, res, next) => {
-	console.log(req.headers)
 	next()
 })
-app.use(express.static('./turnercontemporary'));
+app.use(express.static('./public/'));
 
 //routes
 app.get('/', (req,res) => {
-//	res.render('../index.html');
+//	helper.sendFileList(res);
+	res.render('../index.html');
+})
+
+app.post('/files', (req,res) => {
+	console.log("in app.post");
 	helper.sendFileList(res);
 })
 

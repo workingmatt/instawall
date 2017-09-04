@@ -6,7 +6,7 @@ const path = require('path')
 const failed = []
 
 module.exports = (username) => {
-  const destDir = path.join('./', username)
+  const destDir = path.join('./public/', username)
 
   _mkdir(destDir, (err) => {
     if (err) {
@@ -67,7 +67,7 @@ class Scraper {
 
   download({url, mtime}) {
     const filename = path.basename(url)
-    const localFile = path.join('./', this.username, filename)
+    const localFile = path.join('./public', this.username, filename)
     const filemtime = mtime || Date.now() / 1000
 
     if (fs.existsSync(localFile)) {
