@@ -1,13 +1,17 @@
 <html>
 <head>
 <style>
+	body {
+		background-color: black;
+	}
 	#thegrid {
 		background: red;
 		width: auto;
-		margin: 0;}
+		margin: 0;
+	}
 	#grid-sizer,
 	#grid-item {
-		width: 20%;
+		width: 10%;
 		margin: 0px;
 		float: left;
 	}
@@ -18,6 +22,8 @@
 </head>
 
 <body>
+<input id="clickMe" type="button" value="clickMe" onClick="buttonClicked();"/>
+
 <div id="thegrid">
 <div id="grid-sizer"></div>
 </div>
