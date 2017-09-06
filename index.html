@@ -9,9 +9,7 @@
 		width: auto;
 		margin: 0;
 	}
-	#grid-sizer,
 	#grid-item {
-		width: 10%;
 		margin: 0px;
 		float: left;
 	}
@@ -22,13 +20,13 @@
 </head>
 
 <body>
-<input id="clickMe" type="button" value="clickMe" onClick="buttonClicked();"/>
+<input id="startTimer" type="button" value="startTimer" onClick="startTimer();"/>
+<input id="stopTimer" type="button" value="stopTimer" onClick="stopTimer();"/>
 
 <div id="thegrid">
-<div id="grid-sizer"></div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./jquery-3.2.1.min.js"></script>
 <script src="./imagesloaded.pkgd.min.js"></script>
 <script src="./masonry.pkgd.min.js"></script>
 <script src="./client.js"></script>

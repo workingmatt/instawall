@@ -4,6 +4,8 @@ var fs = require('fs');
 module.exports = {
 
 	sendFileList: function(res){
+		console.log("***********");
+		console.log("Arguement: "+process.argv[2]);
 		var path = "./public/turnercontemporary";
 		fs.readdir(path,'utf8',function(err,files){
 			if(err){

@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const helper = require('./libs/helpers.js');
 
 //scraper module gets images from instagram user account
-//require('./libs/scraper')(process.argv[2]);
+require('./libs/scraper')(process.argv[2]);
 
 app.set('view engine','ejs');
 app.engine('html',require('ejs').renderFile);
