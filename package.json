@@ -1,6 +1,6 @@
 {
   "name": "instawall",
-  "version": "1",
+  "version": "0.0.1",
   "description": "Scrapes an Instagram user's account for images which are then animated in a browser",
   "main": "server.js",
   "scripts": {
